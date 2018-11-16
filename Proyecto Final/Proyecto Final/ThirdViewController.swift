@@ -13,11 +13,12 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var imagenUsuario: UIImageView!
     @IBOutlet weak var nombreUsuario: Etiqueta!
     @IBOutlet weak var edadUsuario: Etiqueta!
-    @IBOutlet weak var favoritos: UIButton!
+    @IBOutlet weak var favoritos: Botoncito!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         favoritos.setTitle("Ver favoritos", for: .normal)
         

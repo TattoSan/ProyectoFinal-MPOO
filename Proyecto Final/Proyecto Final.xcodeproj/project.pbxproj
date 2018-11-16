@@ -15,6 +15,7 @@
 		FADB4DA7219F59750059EA00 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4DA6219F59750059EA00 /* SecondViewController.swift */; };
 		FADB4DA9219F5A660059EA00 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4DA8219F5A660059EA00 /* ThirdViewController.swift */; };
 		FADB4DAB219F5D170059EA00 /* Etiqueta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4DAA219F5D170059EA00 /* Etiqueta.swift */; };
+		FADB4DAD219F658D0059EA00 /* Botoncito.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4DAC219F658D0059EA00 /* Botoncito.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FADB4DA6219F59750059EA00 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FADB4DA8219F5A660059EA00 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		FADB4DAA219F5D170059EA00 /* Etiqueta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etiqueta.swift; sourceTree = "<group>"; };
+		FADB4DAC219F658D0059EA00 /* Botoncito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Botoncito.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				FADB4DA6219F59750059EA00 /* SecondViewController.swift */,
 				FADB4DA8219F5A660059EA00 /* ThirdViewController.swift */,
 				FADB4DAA219F5D170059EA00 /* Etiqueta.swift */,
+				FADB4DAC219F658D0059EA00 /* Botoncito.swift */,
 				FADB4D98219F58900059EA00 /* Main.storyboard */,
 				FADB4D9B219F58900059EA00 /* Assets.xcassets */,
 				FADB4D9D219F58900059EA00 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				FADB4DA9219F5A660059EA00 /* ThirdViewController.swift in Sources */,
 				FADB4DAB219F5D170059EA00 /* Etiqueta.swift in Sources */,
 				FADB4D95219F58900059EA00 /* AppDelegate.swift in Sources */,
+				FADB4DAD219F658D0059EA00 /* Botoncito.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
