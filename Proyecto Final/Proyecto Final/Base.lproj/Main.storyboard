@@ -80,20 +80,34 @@
             <point key="canvasLocation" x="789.85507246376812" y="-346.46739130434787"/>
         </scene>
         <!--Buscar-->
-        <scene sceneID="4Z4-IH-Pi5">
+        <scene sceneID="f21-oH-qTn">
             <objects>
-                <viewController id="IVa-Me-iOS" customClass="ViewController" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ekc-xC-PhW">
+                <tableViewController id="e4v-tK-kvz" customClass="Tabla" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U8a-Gs-2uq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Syh-sl-ENr"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Buscar" id="JXY-hr-5DW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UTH-2b-hDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celda" id="415-zW-gI4" customClass="CeldaPersonalizada" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="415-zW-gI4" id="tQF-bs-SOv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e4v-tK-kvz" id="CmC-HB-MTL"/>
+                            <outlet property="delegate" destination="e4v-tK-kvz" id="aGn-cd-jsl"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Buscar" id="m0d-vQ-JP2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrA-mK-dO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="-1104"/>
+            <point key="canvasLocation" x="789.85507246376812" y="-1059.7826086956522"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iX2-PN-BSm">
@@ -105,7 +119,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="IVa-Me-iOS" kind="relationship" relationship="viewControllers" id="gsa-ZE-RKs"/>
+                        <segue destination="e4v-tK-kvz" kind="relationship" relationship="viewControllers" id="q8a-5m-GIq"/>
                         <segue destination="l9d-RN-2Kg" kind="relationship" relationship="viewControllers" id="bvY-4c-Gxj"/>
                         <segue destination="1Nh-yp-ZBP" kind="relationship" relationship="viewControllers" id="lZ5-BK-EHw"/>
                     </connections>

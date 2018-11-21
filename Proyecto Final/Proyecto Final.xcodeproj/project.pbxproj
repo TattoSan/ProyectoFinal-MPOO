@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA970FE121A6090C00FA877F /* CeldaPersonalizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA970FE021A6090C00FA877F /* CeldaPersonalizada.swift */; };
+		FA970FE521A60AFF00FA877F /* Tabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA970FE421A60AFF00FA877F /* Tabla.swift */; };
 		FADB4D95219F58900059EA00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4D94219F58900059EA00 /* AppDelegate.swift */; };
 		FADB4D97219F58900059EA00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4D96219F58900059EA00 /* ViewController.swift */; };
 		FADB4D9A219F58900059EA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB4D98219F58900059EA00 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA970FE021A6090C00FA877F /* CeldaPersonalizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPersonalizada.swift; sourceTree = "<group>"; };
+		FA970FE421A60AFF00FA877F /* Tabla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabla.swift; sourceTree = "<group>"; };
 		FADB4D91219F58900059EA00 /* Proyecto Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proyecto Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB4D94219F58900059EA00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADB4D96219F58900059EA00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,10 +68,12 @@
 			children = (
 				FADB4D94219F58900059EA00 /* AppDelegate.swift */,
 				FADB4D96219F58900059EA00 /* ViewController.swift */,
+				FA970FE421A60AFF00FA877F /* Tabla.swift */,
 				FADB4DA6219F59750059EA00 /* SecondViewController.swift */,
 				FADB4DA8219F5A660059EA00 /* ThirdViewController.swift */,
 				FADB4DAA219F5D170059EA00 /* Etiqueta.swift */,
 				FADB4DAC219F658D0059EA00 /* Botoncito.swift */,
+				FA970FE021A6090C00FA877F /* CeldaPersonalizada.swift */,
 				FADB4D98219F58900059EA00 /* Main.storyboard */,
 				FADB4D9B219F58900059EA00 /* Assets.xcassets */,
 				FADB4D9D219F58900059EA00 /* LaunchScreen.storyboard */,
@@ -148,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADB4DA7219F59750059EA00 /* SecondViewController.swift in Sources */,
+				FA970FE121A6090C00FA877F /* CeldaPersonalizada.swift in Sources */,
+				FA970FE521A60AFF00FA877F /* Tabla.swift in Sources */,
 				FADB4D97219F58900059EA00 /* ViewController.swift in Sources */,
 				FADB4DA9219F5A660059EA00 /* ThirdViewController.swift in Sources */,
 				FADB4DAB219F5D170059EA00 /* Etiqueta.swift in Sources */,
