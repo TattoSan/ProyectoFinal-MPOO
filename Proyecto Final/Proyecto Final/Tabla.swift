@@ -12,7 +12,7 @@ class Tabla: UITableViewController {
     
     var opciones: [String] = ["Cerca de mi", "Economicos", "Express", "Saludable", "Busqueda avanzada"]
     
-    var colores: [UIColor] = [UIColor.blue,UIColor.black,UIColor.green,UIColor.red,UIColor.orange]
+    var colores: [UIColor] = [UIColor.blue,UIColor.yellow,UIColor.green,UIColor.red,UIColor.orange]
     
     let cellSpacingHeight: CGFloat = 50
 
@@ -59,5 +59,8 @@ class Tabla: UITableViewController {
         return cellSpacingHeight
     }
     
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        
+    }
    
 }

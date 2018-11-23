@@ -15,7 +15,6 @@ class CeldaPersonalizada: UITableViewCell {
         layer.borderWidth = 3.0
         layer.borderColor = UIColor.black.cgColor
         layer.cornerRadius = 9.0
-        layer.backgroundColor = UIColor.blue.cgColor
         textLabel?.textAlignment = .left
         textLabel?.sizeToFit()
     }

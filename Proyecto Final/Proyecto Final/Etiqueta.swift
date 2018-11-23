@@ -16,6 +16,9 @@ class Etiqueta: UILabel {
         layer.borderColor = UIColor.black.cgColor
         layer.cornerRadius = 9.0
         self.textAlignment = .center
+        backgroundColor = UIColor.lightGray
+        layer.masksToBounds = true
+        textColor = UIColor.white
     }
     
 }

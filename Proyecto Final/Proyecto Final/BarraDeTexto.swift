@@ -1,21 +1,20 @@
 //
-//  Botoncito.swift
+//  BarraDeTexto.swift
 //  Proyecto Final
 //
-//  Created by MacBook on 11/16/18.
+//  Created by Macbook on 11/23/18.
 //  Copyright © 2018 ioslab. All rights reserved.
 //
 
 import UIKit
 
-class Botoncito: UIButton {
+class BarraDeTexto: UITextField {
 
     override func awakeFromNib() {
         layer.borderWidth = 3.0
         layer.borderColor = UIColor.black.cgColor
         layer.cornerRadius = 9.0
-        self.setTitleColor(UIColor.white, for: .normal)
-        backgroundColor = UIColor.brown
+        backgroundColor = UIColor.cyan
     }
 
 }

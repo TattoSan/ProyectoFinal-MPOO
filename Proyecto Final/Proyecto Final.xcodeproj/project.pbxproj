@@ -18,6 +18,7 @@
 		FADB4DA9219F5A660059EA00 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4DA8219F5A660059EA00 /* ThirdViewController.swift */; };
 		FADB4DAB219F5D170059EA00 /* Etiqueta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4DAA219F5D170059EA00 /* Etiqueta.swift */; };
 		FADB4DAD219F658D0059EA00 /* Botoncito.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4DAC219F658D0059EA00 /* Botoncito.swift */; };
+		FADDDD0221A8A0CF00172F2C /* BarraDeTexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDDD0121A8A0CF00172F2C /* BarraDeTexto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FADB4DA8219F5A660059EA00 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		FADB4DAA219F5D170059EA00 /* Etiqueta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etiqueta.swift; sourceTree = "<group>"; };
 		FADB4DAC219F658D0059EA00 /* Botoncito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Botoncito.swift; sourceTree = "<group>"; };
+		FADDDD0121A8A0CF00172F2C /* BarraDeTexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarraDeTexto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				FADB4DAA219F5D170059EA00 /* Etiqueta.swift */,
 				FADB4DAC219F658D0059EA00 /* Botoncito.swift */,
 				FA970FE021A6090C00FA877F /* CeldaPersonalizada.swift */,
+				FADDDD0121A8A0CF00172F2C /* BarraDeTexto.swift */,
 				FADB4D98219F58900059EA00 /* Main.storyboard */,
 				FADB4D9B219F58900059EA00 /* Assets.xcassets */,
 				FADB4D9D219F58900059EA00 /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				FA970FE521A60AFF00FA877F /* Tabla.swift in Sources */,
 				FADB4D97219F58900059EA00 /* ViewController.swift in Sources */,
 				FADB4DA9219F5A660059EA00 /* ThirdViewController.swift in Sources */,
+				FADDDD0221A8A0CF00172F2C /* BarraDeTexto.swift in Sources */,
 				FADB4DAB219F5D170059EA00 /* Etiqueta.swift in Sources */,
 				FADB4D95219F58900059EA00 /* AppDelegate.swift in Sources */,
 				FADB4DAD219F658D0059EA00 /* Botoncito.swift in Sources */,
