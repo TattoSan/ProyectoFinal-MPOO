@@ -10,22 +10,18 @@ import UIKit
 
 class Tabla: UITableViewController {
     
-    var opciones: [String] = ["Cerca de mi", "Economicos", "Express", "Saludable", "Busqueda avanzada"]
+    var opciones: [String] = ["Cerca de mi", "Economicos", "Express", "Saludable"]
     
-    var colores: [UIColor] = [UIColor.blue,UIColor.yellow,UIColor.green,UIColor.red,UIColor.orange]
+    var colores: [UIColor] = [UIColor.red,UIColor.orange,UIColor.yellow,UIColor.green]
     
     let cellSpacingHeight: CGFloat = 50
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      view.backgroundColor = UIColor.cyan
     }
     
-   /* override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
-    }
-   */
  
     override func numberOfSections(in tableView: UITableView) -> Int {
         return self.opciones.count
@@ -62,5 +58,12 @@ class Tabla: UITableViewController {
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
         
     }
-   
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destino = segue.destination as! ViewController
+        let indexpath = self.tableView.indexPathForSelectedRow
+        destino.caso = indexpath?.section ?? 0
+
+    }
 }
+
