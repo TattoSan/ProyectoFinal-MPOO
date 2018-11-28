@@ -14,14 +14,21 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var nombreUsuario: Etiqueta!
     @IBOutlet weak var edadUsuario: Etiqueta!
     @IBOutlet weak var favoritos: Botoncito!
+    @IBOutlet weak var configuracion: Botoncito!
     
+    var nombreImagen = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        imagenUsuario.image = UIImage.init(named: nombreImagen)
         
         favoritos.setTitle("Ver favoritos", for: .normal)
+        configuracion.setTitle("Modificar perfil", for: .normal)
         
+    }
+    
+    override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+
     }
 
 }

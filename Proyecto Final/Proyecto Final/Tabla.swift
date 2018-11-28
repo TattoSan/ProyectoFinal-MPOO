@@ -10,7 +10,7 @@ import UIKit
 
 class Tabla: UITableViewController {
     
-    var opciones: [String] = ["Cerca de mi", "Economicos", "Express", "Saludable"]
+    var opciones: [String] = [" Por direccion", "Economicos", "Express", "Saludable"]
     
     var colores: [UIColor] = [UIColor.red,UIColor.orange,UIColor.yellow,UIColor.green]
     
