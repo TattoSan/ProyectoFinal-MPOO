@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         botonSalir.setTitle("Regresar", for: .normal)
         botonBuscar.setTitle("Buscar", for: .normal)
         caso+=1

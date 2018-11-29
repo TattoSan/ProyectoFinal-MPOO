@@ -10,48 +10,60 @@ import UIKit
 
 class Tabla: UITableViewController {
     
-    var opciones: [String] = [" Por direccion", "Economicos", "Express", "Saludable"]
-    
-    var colores: [UIColor] = [UIColor.red,UIColor.orange,UIColor.yellow,UIColor.green]
+    var opciones: [String] = ["Por direccion", "Economicos", "Express", "Saludable"]
+
+    var imagenes = [UIImage(named: "Dir"), UIImage(named: "Eco"), UIImage(named: "Exp"), UIImage(named: "Salud")]
     
     let cellSpacingHeight: CGFloat = 50
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
-      view.backgroundColor = UIColor.cyan
     }
     
- 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return self.opciones.count
     }
     
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
+    }
+    
+        func gradient(frame:CGRect) -> CAGradientLayer {
+            let layer = CAGradientLayer()
+            layer.frame = frame
+            layer.startPoint = CGPoint(x: 0, y: 0.5)
+            layer.endPoint = CGPoint(x: 1, y: 0.5)
+            layer.colors = [
+            UIColor.orange.cgColor,UIColor.red.cgColor]
+            return layer
+        
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Celda", for: indexPath)
         
         cell.textLabel?.text = opciones[indexPath.section]
-        cell.backgroundColor = colores[indexPath.section]
-        cell.layer.borderColor = UIColor.black.cgColor
+        cell.textLabel?.textColor = UIColor.white;
+        cell.layer.insertSublayer(gradient(frame: cell.bounds), at:0)
+        cell.layer.borderColor = UIColor.red.cgColor
         cell.layer.borderWidth = 0
-        cell.layer.cornerRadius = 8
+        cell.layer.cornerRadius = 4
+        cell.imageView?.image = imagenes[indexPath.section]
         cell.clipsToBounds = true
+        
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return 100
     }
     
    
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
         return cellSpacingHeight
     }
     
