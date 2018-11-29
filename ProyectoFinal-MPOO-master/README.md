@@ -1,2 +1,0 @@
-# ProyectoFinal-MPOO
-Pumantojo
