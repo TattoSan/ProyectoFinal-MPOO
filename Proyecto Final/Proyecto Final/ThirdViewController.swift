@@ -20,12 +20,9 @@ class ThirdViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         imagenUsuario.image = UIImage.init(named: nombreImagen)
-        
         favoritos.setTitle("Mis favoritos", for: .normal)
         configuracion.setTitle("Editar perfil", for: .normal)
-        
     }
     
     override func unwind(for unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {

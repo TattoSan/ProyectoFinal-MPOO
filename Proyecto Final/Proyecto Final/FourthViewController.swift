@@ -12,10 +12,8 @@ class FourthViewController: UIViewController, UICollectionViewDataSource,UIColle
    
     @IBOutlet weak var salir: UIButton!
     
+    var listaImagenes : [String] = ["predeterminado", "cuadros", "hipster", "pinguino", "pirata"]
     
-    var listaImagenes : [String] = ["predeterminado","cuadros", "hipster", "pinguino", "pirata" ]
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         salir.setTitle("Listo", for: .normal)

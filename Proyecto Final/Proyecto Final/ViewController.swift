@@ -23,14 +23,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        botonSalir.setTitle("Regresar", for: .normal)
+        botonSalir.setTitle("Atrás", for: .normal)
         botonBuscar.setTitle("Buscar", for: .normal)
         caso+=1
         
         if caso<4 {
             instrucciones.text = "Ingrese la palabra que desea buscar o la cantidad maxima a buscar"
         }else{
-            instrucciones.text = "Estos son los establecimientos con comida saludable"
+            instrucciones.text = "Estos son los establecimientos con comida saludable:"
         }
         
     }

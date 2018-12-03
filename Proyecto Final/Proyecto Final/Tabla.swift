@@ -14,7 +14,7 @@ class Tabla: UITableViewController {
 
     var imagenes = [UIImage(named: "cerca"), UIImage(named: "economico"), UIImage(named: "express"), UIImage(named: "saludable")]
     
-    let cellSpacingHeight: CGFloat = 50
+    let cellSpacingHeight: CGFloat = 30
 
     override func viewDidLoad() {
         super.viewDidLoad()
