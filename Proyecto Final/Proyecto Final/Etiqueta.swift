@@ -10,13 +10,22 @@ import UIKit
 
 class Etiqueta: UILabel {
 
+    func gradient(frame:CGRect) -> CAGradientLayer {
+        let layer = CAGradientLayer()
+        layer.frame = frame
+        layer.startPoint = CGPoint(x: 0.5, y: 0)
+        layer.endPoint = CGPoint(x: 0.5, y: 1)
+        layer.colors = [UIColor.orange.cgColor, UIColor.red.cgColor]
+        return layer
+    }
+    
     override func awakeFromNib() {
-        self.textColor = UIColor.blue
-        layer.borderWidth = 3.0
-        layer.borderColor = UIColor.black.cgColor
-        layer.cornerRadius = 9.0
+        self.textColor = UIColor.white
+        layer.insertSublayer(gradient(frame: layer.bounds), at: 0)
+        layer.borderWidth = 2
+        layer.borderColor = UIColor.red.cgColor
+        layer.cornerRadius = 4
         self.textAlignment = .center
-        backgroundColor = UIColor.lightGray
         layer.masksToBounds = true
         textColor = UIColor.white
     }

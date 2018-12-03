@@ -14,6 +14,5 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
 
     }
-
     
 }

@@ -23,8 +23,8 @@ class ThirdViewController: UIViewController {
         
         imagenUsuario.image = UIImage.init(named: nombreImagen)
         
-        favoritos.setTitle("Ver favoritos", for: .normal)
-        configuracion.setTitle("Modificar perfil", for: .normal)
+        favoritos.setTitle("Mis favoritos", for: .normal)
+        configuracion.setTitle("Editar perfil", for: .normal)
         
     }
     

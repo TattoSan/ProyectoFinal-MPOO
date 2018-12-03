@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O2R-OJ-TQg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O2R-OJ-TQg">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Configuracion-->
+        <!--Configuración-->
         <scene sceneID="WQ5-OL-Zb5">
             <objects>
-                <viewController id="1Nh-yp-ZBP" customClass="ThirdViewController" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Nh-yp-ZBP" userLabel="Configuración" customClass="ThirdViewController" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8s-iv-Gmv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,23 +37,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhn-jc-xSJ" userLabel="Favoritos" customClass="Botoncito" customModule="Proyecto_Final" customModuleProvider="target">
-                                <rect key="frame" x="76" y="348" width="258" height="81"/>
+                                <rect key="frame" x="78" y="440" width="258" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l10-zj-t36" customClass="Botoncito" customModule="Proyecto_Final" customModuleProvider="target">
-                                <rect key="frame" x="76" y="464" width="258" height="51"/>
+                                <rect key="frame" x="76" y="528" width="258" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="VAE-xC-IdJ" kind="show" id="xNT-O7-wnk"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favoritos" translatesAutoresizingMaskIntoConstraints="NO" id="oYM-I9-8Bh">
+                                <rect key="frame" x="88" y="455" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="perfil" translatesAutoresizingMaskIntoConstraints="NO" id="mc8-sl-JRl">
+                                <rect key="frame" x="86" y="543" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98190191048342168" green="1" blue="0.92111089193416773" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Fzd-IS-pzl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Configuracion" id="tto-bR-tLy"/>
+                    <tabBarItem key="tabBarItem" title="Configuración" image="configuracion" id="tto-bR-tLy" userLabel="Configuración"/>
                     <connections>
                         <outlet property="configuracion" destination="l10-zj-t36" id="4Ac-IR-zJQ"/>
                         <outlet property="edadUsuario" destination="Mfe-HU-MqQ" id="h79-sA-s2D"/>
@@ -177,16 +187,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wSd-EZ-bZc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mapa" id="uXb-5q-EA6"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="mapa" id="uXb-5q-EA6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUY-vS-Cmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="789.85507246376812" y="-346.46739130434787"/>
         </scene>
-        <!--Buscar-->
+        <!--Inicio-->
         <scene sceneID="f21-oH-qTn">
             <objects>
-                <tableViewController id="e4v-tK-kvz" customClass="Tabla" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="e4v-tK-kvz" userLabel="Inicio" customClass="Tabla" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U8a-Gs-2uq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,7 +220,9 @@
                             <outlet property="delegate" destination="e4v-tK-kvz" id="aGn-cd-jsl"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Buscar" id="m0d-vQ-JP2"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="inicio" id="m0d-vQ-JP2" userLabel="Inicio">
+                        <inset key="largeContentSizeImageInsets" minX="1" minY="-1" maxX="1" maxY="1"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrA-mK-dO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,10 +306,13 @@
         <scene sceneID="iX2-PN-BSm">
             <objects>
                 <tabBarController id="O2R-OJ-TQg" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3oL-Wz-XgS">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3oL-Wz-XgS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="e4v-tK-kvz" kind="relationship" relationship="viewControllers" id="q8a-5m-GIq"/>
@@ -310,4 +325,11 @@
             <point key="canvasLocation" x="-130" y="-345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="configuracion" width="23" height="23"/>
+        <image name="favoritos" width="69" height="69"/>
+        <image name="inicio" width="23" height="23"/>
+        <image name="mapa" width="23" height="23"/>
+        <image name="perfil" width="69" height="69"/>
+    </resources>
 </document>

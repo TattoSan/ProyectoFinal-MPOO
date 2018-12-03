@@ -11,7 +11,7 @@ import UIKit
 class BarraDeTexto: UITextField {
 
     override func awakeFromNib() {
-        layer.borderWidth = 3.0
+        layer.borderWidth = 2.0
         layer.borderColor = UIColor.black.cgColor
         layer.cornerRadius = 9.0
         backgroundColor = UIColor.cyan
