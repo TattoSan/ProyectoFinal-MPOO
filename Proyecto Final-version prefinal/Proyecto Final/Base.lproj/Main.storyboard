@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O2R-OJ-TQg">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Configuracion-->
+        <scene sceneID="WQ5-OL-Zb5">
+            <objects>
+                <viewController id="1Nh-yp-ZBP" customClass="ThirdViewController" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8s-iv-Gmv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EVJ-ta-2Hi" userLabel="ImagenUsuario">
+                                <rect key="frame" x="44" y="64" width="176" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyC-6V-wcl" userLabel="Nombre" customClass="Etiqueta" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="258" y="75" width="120" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfe-HU-MqQ" userLabel="Edad" customClass="Etiqueta" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="258" y="180" width="99" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhn-jc-xSJ" userLabel="Favoritos" customClass="Botoncito" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="76" y="348" width="258" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l10-zj-t36" customClass="Botoncito" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="76" y="464" width="258" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="VAE-xC-IdJ" kind="show" id="Q8x-39-1x9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98190191048342168" green="1" blue="0.92111089193416773" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Fzd-IS-pzl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Configuracion" id="tto-bR-tLy"/>
+                    <connections>
+                        <outlet property="configuracion" destination="l10-zj-t36" id="4Ac-IR-zJQ"/>
+                        <outlet property="edadUsuario" destination="Mfe-HU-MqQ" id="h79-sA-s2D"/>
+                        <outlet property="favoritos" destination="Fhn-jc-xSJ" id="gND-6U-SD4"/>
+                        <outlet property="imagenUsuario" destination="EVJ-ta-2Hi" id="Mxd-JP-AP4"/>
+                        <outlet property="nombreUsuario" destination="NyC-6V-wcl" id="72f-5k-SWZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dap-Sc-Ysb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="411.68478260869568"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="VaY-pb-hWM">
+            <objects>
+                <viewController id="VAE-xC-IdJ" customClass="FourthViewController" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kgb-Fg-APV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqJ-dV-ilC" customClass="Etiqueta" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="106" y="69" width="203" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mi3-0w-QNp" customClass="Etiqueta" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="106" y="206" width="203" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-g9-2bn" customClass="Etiqueta" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="90" y="333" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="idb-QT-jlh">
+                                <rect key="frame" x="90" y="386" width="235" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2qC-W8-Ywo">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Imagen" id="xBA-VC-N5v" customClass="CeldaImagen" customModule="Proyecto_Final" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="VAE-xC-IdJ" id="i6y-lL-Sm6"/>
+                                    <outlet property="delegate" destination="VAE-xC-IdJ" id="SHa-l8-kK1"/>
+                                </connections>
+                            </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKI-UC-EOq" customClass="BarraDeTexto" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="90" y="267" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwX-hu-t0a" customClass="Botoncito" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="151" y="579" width="112" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="salir:" destination="VAE-xC-IdJ" eventType="touchUpInside" id="eO7-aU-h3f"/>
+                                    <segue destination="R8M-wx-AxP" kind="unwind" unwindAction="unwindSecondViewWithSegue:" id="59K-0N-cTq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Yq-eP-u3R" customClass="BarraDeTexto" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="90" y="133" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="beu-35-2bZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="instruccionDos" destination="Mi3-0w-QNp" id="6ru-F5-QGg"/>
+                        <outlet property="instruccionTres" destination="DQu-g9-2bn" id="y9L-Op-gPs"/>
+                        <outlet property="instruccionUno" destination="fqJ-dV-ilC" id="gmb-ZF-ZsS"/>
+                        <outlet property="nickUsuario" destination="fKI-UC-EOq" id="rDI-nJ-Daw"/>
+                        <outlet property="nombreUsuario" destination="8Yq-eP-u3R" id="SBs-si-tUw"/>
+                        <outlet property="salir" destination="lwX-hu-t0a" id="TOQ-NU-tPr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyE-i5-ZSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="R8M-wx-AxP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1766.6666666666667" y="411.68478260869568"/>
+        </scene>
+        <!--Mapa-->
+        <scene sceneID="9Lf-U0-MnN">
+            <objects>
+                <viewController id="l9d-RN-2Kg" customClass="SecondViewController" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8dK-gl-nv3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Pmk-At-SFq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wSd-EZ-bZc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mapa" id="uXb-5q-EA6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUY-vS-Cmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="-346.46739130434787"/>
+        </scene>
+        <!--Buscar-->
+        <scene sceneID="f21-oH-qTn">
+            <objects>
+                <tableViewController id="e4v-tK-kvz" customClass="Tabla" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U8a-Gs-2uq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celda" id="415-zW-gI4" customClass="CeldaPersonalizada" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="415-zW-gI4" id="tQF-bs-SOv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="YjS-Wx-xkO" kind="show" identifier="busqueda" id="wm5-zO-xNi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e4v-tK-kvz" id="CmC-HB-MTL"/>
+                            <outlet property="delegate" destination="e4v-tK-kvz" id="aGn-cd-jsl"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Buscar" id="m0d-vQ-JP2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrA-mK-dO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="-1059.7826086956522"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1zL-F6-gAj">
+            <objects>
+                <viewController id="YjS-Wx-xkO" customClass="ViewController" customModule="Proyecto_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HxT-fT-cgf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv2-5m-Wpv" customClass="Botoncito" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="267" y="59" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="rrB-Xc-hDy" kind="unwind" unwindAction="unwindFor:" id="29X-7I-7jA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7L-dz-bo3" customClass="BarraDeTexto" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="72" y="182" width="204" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ljK-ME-yny">
+                                <rect key="frame" x="72" y="257" width="271" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultadoBusqueda" id="wiq-xB-4CR">
+                                        <rect key="frame" x="0.0" y="28" width="271" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wiq-xB-4CR" id="BLm-c9-YYN">
+                                            <rect key="frame" x="0.0" y="0.0" width="271" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YjS-Wx-xkO" id="7LX-pW-ljx"/>
+                                    <outlet property="delegate" destination="YjS-Wx-xkO" id="TMX-lN-gbx"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LH4-3M-FQT" userLabel="instrucciones" customClass="Etiqueta" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="72" y="59" width="187" height="103"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0Z-Zd-SbA" customClass="Botoncito" customModule="Proyecto_Final" customModuleProvider="target">
+                                <rect key="frame" x="284" y="182" width="59" height="29"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="busqueda:" destination="YjS-Wx-xkO" eventType="touchUpInside" id="fHP-X8-TQX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8k0-eM-I8s"/>
+                    </view>
+                    <connections>
+                        <outlet property="botonBuscar" destination="g0Z-Zd-SbA" id="mIp-MX-5Mi"/>
+                        <outlet property="botonSalir" destination="Mv2-5m-Wpv" id="3VB-nO-VTU"/>
+                        <outlet property="instrucciones" destination="LH4-3M-FQT" id="3Ge-r7-CcK"/>
+                        <outlet property="tablaBusqueda" destination="ljK-ME-yny" id="qdH-cu-uYa"/>
+                        <outlet property="textoBusqueda" destination="P7L-dz-bo3" id="N0s-r9-rGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0M3-U7-48U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rrB-Xc-hDy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1768.1159420289857" y="-1063.0434782608697"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="iX2-PN-BSm">
+            <objects>
+                <tabBarController id="O2R-OJ-TQg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3oL-Wz-XgS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="e4v-tK-kvz" kind="relationship" relationship="viewControllers" id="q8a-5m-GIq"/>
+                        <segue destination="l9d-RN-2Kg" kind="relationship" relationship="viewControllers" id="bvY-4c-Gxj"/>
+                        <segue destination="1Nh-yp-ZBP" kind="relationship" relationship="viewControllers" id="lZ5-BK-EHw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yt7-ne-2iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="-345"/>
+        </scene>
+    </scenes>
+</document>
